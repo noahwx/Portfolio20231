@@ -30,8 +30,13 @@ const Contact = () => {
 
             <div className='mobile-wrapper'>
                 <div className='home-mobile-content'>
-                <img src={BackIcon} alt='' className='mobile-back' onClick={() => navigate(-1)}/>
+                    <img src={BackIcon} alt='' className='mobile-back' onClick={() => navigate(-1)}/>
                     <h1 className='mobile-page'>Contact</h1>
+                </div>
+                <div className='contact-page-content'>
+                    <a href='mailto:noahfontenette@outlook.com' className='contact-page-item'>Email</a>
+                    <a href='https://twitter.com/noahf97' className='contact-page-item'>Twitter</a>
+                    <a href='https://www.instagram.com/noahf.97/' className='contact-page-item'>Instagram</a>
                 </div>
                 <div>
                     <div className='mobile-header'>
