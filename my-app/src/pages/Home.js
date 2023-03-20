@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../logo.svg';
 import { NavLink } from 'react-router-dom';
-import BackgroundImage from '../image.jpg';
+// import BackgroundImage from '../image.jpg';
 
 const Home = () => {
 
