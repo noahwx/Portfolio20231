@@ -33,6 +33,10 @@ const About = () => {
                     <img src={BackIcon} alt='' className='mobile-back' onClick={() => navigate(-1)}/>
                     <h1 className='mobile-page'>About <h1 className='mobile-page2'> Me</h1></h1>
                 </div>
+                <div className='mobile-about-content'>
+                    <p className='mobile-about-text'>I am a 25 year old web developer and analyst from the United States. I have been coding for about 3 years now and I am always looking to learn more. I am currently working on a few projects and I am always looking for new opportunities. I am currently looking for a full time position as a web developer or analyst. If you are interested in working with me do not hesitate to contact me today!</p>
+                    <a href='mailto:noahfontenette@outlook.com' className='about-page-item'>Email Me Today</a>
+                </div>
                 <div>
                     <div className='mobile-header'>
                         <h4 className="mobile-header-btn-etcs">Menu</h4>
