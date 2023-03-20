@@ -51,6 +51,8 @@ const Home = () => {
                             </div>
                         ) : null}
                     </div>
+                    <div className='mobile-bg-gradient2'></div>
+                    <div className='mobile-bg-gradient'></div>
                     <img src={BackgroundImage} alt='' className='home-mobile-bg'/>
                 </div>
             </div>
