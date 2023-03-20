@@ -34,6 +34,7 @@
   .mobile-header {
     display: flex;
     justify-content: center;
+    animation: openMobileMenu 500ms linear;
   }
 
   .header-btn {
@@ -59,5 +60,16 @@
     font-size: clamp(1.5rem, 3vw, 1.5rem);
     padding: 0.2em;
     color: inherit;
+  }
+
+  @keyframes openMobileMenu {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
   }
 }
