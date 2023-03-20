@@ -38,7 +38,7 @@
 
   .header-btn {
     position: absolute;
-    bottom: 5em;
+    bottom: 4em;
     width: 5em;
     cursor: pointer;
   }
@@ -48,7 +48,7 @@
     justify-content: center;
     margin: 0 auto;
     position: absolute;
-    bottom: 12em;
+    bottom: 11em;
     padding: 1em;
     background-color: #F1F0F9;
     border-radius: 2em;
