@@ -1,14 +1,63 @@
+@import url("https://use.typekit.net/qet5luu.css");
+
 * {
   padding: 0;
   margin: 0;
+  font-family: articulat-cf, sans-serif;
+  font-style: normal;
 }
 
 /* Desktop CSS */
 
+.Header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Header-Logo {
+  width: 5em;
+}
+
+.mobile-header {
+  display: none;
+}
+
 /* Mobile CSS */
 
-@media only screen and (max-width: 1000px) {
-  body {
-    background-color: lightblue;
+@media only screen and (max-width: 950px) {
+
+  .Header {
+    display: none;
+  }
+
+  .mobile-header {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header-btn {
+    position: absolute;
+    bottom: 5em;
+    width: 5em;
+    cursor: pointer;
+  }
+
+  .mobile-header-items {
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 12em;
+    padding: 1em;
+    background-color: #F1F0F9;
+    border-radius: 2em;
+  }
+
+  .mobile-header-item {
+    text-decoration: none;
+    font-size: clamp(1.5rem, 3vw, 1.5rem);
+    padding: 0.2em;
+    color: inherit;
   }
 }

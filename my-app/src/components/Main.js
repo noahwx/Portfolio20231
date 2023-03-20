@@ -8,10 +8,10 @@ import Projects from "../pages/Projects";
 const Main = () => {
     return ( 
         <Routes>
-            <Route to='/' element={<Home />} />
-            <Route to='/About' element={<About />} />
-            <Route to='/Projects' element={<Projects />} />
-            <Route to='/Contact' element={<Contact />} />
+            <Route exact path='/' element={<Home />} />
+            <Route exact path='/pages/About' element={<About />} />
+            <Route exact path='/pages/Projects' element={<Projects />} />
+            <Route exact path='/pages/Contact' element={<Contact />} />
         </Routes>
      );
 }
