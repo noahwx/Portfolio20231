@@ -23,6 +23,10 @@
   display: none;
 }
 
+.mobile-wrapper {
+  display: none;
+}
+
 /* Mobile CSS */
 
 @media only screen and (max-width: 950px) {
@@ -32,6 +36,7 @@
   }
 
   .mobile-wrapper {
+    display: contents;
     height: 100%;
     width: 100%;
     overflow-y: hidden;
@@ -71,7 +76,7 @@
     padding: 0.7em;
     background-color: #F1F0F9;
     border-radius: 2em;
-    animation: openMobileMenu 500ms linear;
+    animation: openMobileMenu 300ms linear;
   }
 
   .mobile-header-item {
@@ -90,15 +95,9 @@
       transform: scale(0);
       opacity: 0;
     }
-    25% {
-      transform: scale(0.95);
-    }
     50%{
-      transform: scale(1.1);
+      transform: scale(1.2);
       opacity: 1;
-    }
-    75% {
-      transform: scale(1);
     }
     100% {
       transform: scale(1);
