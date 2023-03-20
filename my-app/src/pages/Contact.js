@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../logo.svg';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
+import BackIcon from '../Arrow_alt_left.svg';
 
 const Contact = () => {
 
@@ -22,11 +23,14 @@ const Contact = () => {
         setOpen(false);
     };
 
+    const navigate = useNavigate()
+
     return ( 
         <div>
 
             <div className='mobile-wrapper'>
                 <div className='home-mobile-content'>
+                <img src={BackIcon} alt='' className='mobile-back' onClick={() => navigate(-1)}/>
                     <h1 className='mobile-page'>Contact</h1>
                 </div>
                 <div>
