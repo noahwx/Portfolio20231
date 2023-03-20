@@ -133,7 +133,7 @@
     position: absolute;
     z-index: 99;
     left: 2em;
-    top: 3em;
+    top: 5em;
     color: #F1F0F9;
     text-shadow: 2px 5px 15px rgba(0, 0, 0, 0.25);
   }
@@ -181,7 +181,7 @@
   .mobile-page {
     display: flex;
     justify-content: center;
-    margin-top: 3em;
+    margin-top: 1em;
     font-size: clamp(2rem, 4vw, 2rem);
   }
   
