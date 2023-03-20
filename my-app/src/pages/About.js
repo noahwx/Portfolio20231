@@ -24,25 +24,30 @@ const About = () => {
 
     return ( 
         <div>
-            <div>
-                <h1>About</h1>
-            </div>
-            <div>
-                <div className='mobile-header'>
-                    <h4 className="mobile-btn-etcs">Menu</h4>
-                    <div className='header-btn'>
-                        <img src={logo} alt='' onClick={handleOpen} className='mobile-btn'/>
-                    </div>
 
-                    {open ? (
-                        <div className='mobile-header'>
-                            <div className='mobile-NavItems'>
-                                <NavLink to='/' className='mobile-header-item' onClick={handleMenuOne}>Home</NavLink>
-                                <NavLink to='/Projects' className='mobile-header-item' onClick={handleMenuTwo}>Projects</NavLink>
-                                <NavLink to='/Contact' className='mobile-header-item' onClick={handleMenuThree}>Contact</NavLink>
-                            </div>
+            <div className='mobile-wrapper'>
+                <div className='home-mobile-content'>
+                    <h1 className='mobile-page'>About <h1 className='mobile-page2'> Me</h1></h1>
+                </div>
+                <div>
+                    <div className='mobile-header'>
+                        <h4 className="mobile-header-btn-etcs">Menu</h4>
+                        <div className='header-btn'>
+                            <img src={logo} alt='' onClick={handleOpen} className='mobile-btn'/>
                         </div>
-                    ) : null}
+
+                        {open ? (
+                            <div className='mobile-header'>
+                                <div className='mobile-header-items'>
+                                    <NavLink to='/' className='mobile-header-item' onClick={handleMenuOne}>Home</NavLink>
+                                    <NavLink to='/pages/About' className='mobile-header-item' onClick={handleMenuOne}>About</NavLink>
+                                    <NavLink to='/pages/Projects' className='mobile-header-item' onClick={handleMenuTwo}>Projects</NavLink>
+                                    <NavLink to='/pages/Contact' className='mobile-header-item' onClick={handleMenuThree}>Contact</NavLink>
+                                </div>
+                            </div>
+                        ) : null}
+                    </div>
+                    <div className='mobile-bg-gradient'></div>
                 </div>
             </div>
         </div>

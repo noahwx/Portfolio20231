@@ -32,7 +32,9 @@
   }
 
   .mobile-wrapper {
-    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
   }
 
   .mobile-header {
@@ -56,7 +58,7 @@
     opacity: 0;
     animation: menuTip 1s linear;
     animation-delay: 2s;
-    color: inherit;
+    color: #F1F0F9;
   }
 
   .mobile-header-items {
@@ -69,7 +71,7 @@
     padding: 0.7em;
     background-color: #F1F0F9;
     border-radius: 2em;
-    animation: openMobileMenu 250ms linear;
+    animation: openMobileMenu 500ms linear;
   }
 
   .mobile-header-item {
@@ -79,16 +81,24 @@
     color: inherit;
   }
 
+  .mobile-header-item.active {
+    color: #E84855;
+  }
+
   @keyframes openMobileMenu {
     0% {
       transform: scale(0);
       opacity: 0;
     }
+    25% {
+      transform: scale(0.95);
+    }
     50%{
-      transform: scale(1.05);
+      transform: scale(1.1);
+      opacity: 1;
     }
     75% {
-      transform: scale(1.1);
+      transform: scale(1);
     }
     100% {
       transform: scale(1);
@@ -102,7 +112,7 @@
       opacity: 0;
       transform: translateY(200%);
     }
-    25% {
+    25%, 30%, 35%, 40%, 45% {
       opacity: 1;
       transform: translateY(0);
     }
@@ -110,7 +120,7 @@
       opacity: 1;
       transform: translateY(0);
     }
-    75% {
+    75%, 85%, 90%, 95% {
       opacity: 1;
       transform: translateY(0);
     }
@@ -139,7 +149,7 @@
   }
 
   .home-mobile-bg {
-    position: absolute;
+    position: fixed;
     z-index: 0;
     width: 75em;
     height: 58.1em;
@@ -149,15 +159,16 @@
   }
 
   .mobile-bg-gradient {
-    position: absolute;
+    position: fixed;
     z-index: 1;
     height: 58.1em;
     width: 50em;
     background-image: linear-gradient(180deg, rgba(56, 63, 81, 0) 0%, rgba(56, 63, 81, 0.7) 100%);
+    overflow: hidden;
   }
 
   .mobile-bg-gradient2 {
-    position: absolute;
+    position: fixed;
     z-index: 90;
     width: 50em;
     height: 58.1em;
@@ -165,5 +176,21 @@
     left: -10em;
     background: linear-gradient(180deg, rgba(241, 240, 249, 0) 51.36%, #F1F0F9 100%);
     transform: rotate(-45deg);
+    overflow: hidden;
+  }
+
+  .mobile-page {
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+    font-size: clamp(2rem, 4vw, 2rem);
+  }
+  
+  .mobile-page2 {
+    display: flex;
+    justify-content: center;
+    margin-left: 0.4em;
+    font-size: clamp(2rem, 4vw, 2rem);
+    font-weight: 200;
   }
 }
