@@ -33,6 +33,11 @@ const Projects = () => {
                 <img src={BackIcon} alt='' className='mobile-back' onClick={() => navigate(-1)}/>
                     <h1 className='mobile-page'>Projects</h1>
                 </div>
+                <div className='projects-mobile-content'>
+                    <div className='projects-mobile-item'></div>
+                    <div className='projects-mobile-item'></div>
+                    <div className='projects-mobile-item'></div>
+                </div>
                 <div>
                     <div className='mobile-header'>
                         <h4 className="mobile-header-btn-etcs">Menu</h4>
