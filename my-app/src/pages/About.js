@@ -27,7 +27,9 @@ const About = () => {
 
     return ( 
         <div>
-
+            <div className='desktop-wrapper'>
+                <div className='desktop-bg'></div>
+            </div>
             <div className='mobile-wrapper'>
                 <div className='home-mobile-content'>
                     <img src={BackIcon} alt='' className='mobile-back' onClick={() => navigate(-1)}/>

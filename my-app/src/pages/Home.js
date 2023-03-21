@@ -25,7 +25,9 @@ const Home = () => {
 
     return ( 
         <div>
-
+            <div className='desktop-wrapper'>
+                <div className='desktop-bg'></div>
+            </div>
             <div className='mobile-wrapper'>
                 <div className='home-mobile-content'>
                     <div className='home-mobile-info'>
